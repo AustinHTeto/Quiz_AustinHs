@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teto Trail - Product Listings</title>
+<link rel="stylesheet" href="style2s.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="tETRA2.png" alt="Teto Trails Logo" >
+            </a>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="What would you like to search for....." />
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="nav-icons">
+            <a href="Catalogue.html" title="Shopping Cart">🛒</a>
+            <a href="Music.html" title="Headphones / Support">🎧</a>
+            <span class="divider"></span>
+            <a href="Login.html" class="text-sm font-medium hover:underline">Sign in</a>
+        </div>
+    </nav>
+
+    <div class="Product">
+        
+        <aside class="sidebar sidebar-layout">
+            
+            <h2 class="text-xl font-bold mb-4 border-b pb-2 text-gray-700">Filter By</h2>
+ 
+            <div class="mb-5">
+                <div class="filter-section-title">All Items</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="ready-stock" name="stock" checked>
+                    <label for="ready-stock">Ready Stock</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="pre-order" name="stock">
+                    <label for="pre-order">Pre Order</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="hide-sold-items" name="stock">
+                    <label for="hide-sold-items">Hide Sold Items</label>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="filter-section-title">In-Store Availability</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="alpha-store" name="store">
+                    <label for="alpha-store">Alpha Store</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="beta-store" name="store">
+                    <label for="beta-store">Beta Store</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="gamma-store" name="store">
+                    <label for="gamma-store">Gamma Store</label>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="filter-section-title">Special Deal</div>
+            <a href="#"><div class="filter-highlight">Wipeout Sale! 🎊</div></a>
+            </div>
+            <div class="mb-5">
+                <div class="filter-section-title">Showcase</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="showcase-only" name="showcase">
+                    <label for="showcase-only">Showcase Only</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="hide-showcase" name="showcase">
+                    <label for="hide-showcase">Hide Showcase</label>
+                </div>
+            </div>
+        
+             <div class="mb-5">
+                <div class="filter-section-title">Cosplay Corner</div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cosplay-only" name="cosplay">
+                    <label for="cosplay-only">Cosplay Corner Only</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="hide-cosplay" name="cosplay">
+                    <label for="hide-cosplay">Hide Cosplay Corner</label>
+                </div>
+            </div>
+      
+             <div class="mb-5">
+                <div class="filter-section-title">Price Range</div>
+                <input type="range" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer range-lg accent-[#ff4500]">           
+                <div class="flex justify-between text-xs mt-1 text-gray-500">
+                    <span>IDR 10K</span>
+                    <span>IDR 1M+</span>
+                </div>
+            </div>
+        </aside>
+
+      
+        <main class="product-listing product-main-area">
+            <h1 class="product-listing-title">All Items</h1>
+            
+         
+            <div class="product-grid">
+                
+           
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="TetFuwa.jpg">                    <p class="product-category">fuwa petit / fuwa plush</p>
+                    <h3 class="product-title">Kasane Teto Fuwa Plushie 3.0</h3>
+                    <p class="product-price">IDR 240,000</p>
+                    <p class="product-detail deposit">DP IDR 100,000</p>
+                    <p class="product-detail release">Releases March 2026</p>
+                </a>
+
+          
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="tetofig.jpg">                    <p class="product-category">UTAU Kasane Teto</p>
+                    <h3 class="product-title">Kasane Teto Chokonose Figure</h3>
+                    <p class="product-price">IDR 950,000</p>
+                    <p class="product-detail deposit">DP IDR 250,000</p>
+                    <p class="product-detail release">Releases April 2026</p>
+                </a>
+ 
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="tetonen.jpg">                    <p class="product-category">Figure / Nendoroid</p>
+                    <h3 class="product-title">Nendoroid Kasane Teto 2.0</h3>
+                    <p class="product-price">IDR 480,000</p>
+                    <p class="product-detail deposit">DP IDR 150,000</p>
+                    <p class="product-detail release">Releases July 2026</p>
+                </a>
+
+
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="Tetyoshiwar.jpg">                    <p class="product-category">GoodSMILE Standee</p>
+                    <h3 class="product-title">Kasane Teto Yoshiwara Lament Ver</h3>
+                    <p class="product-price">IDR 240,000</p>
+                    <p class="product-detail deposit">DP IDR 100,000</p>
+                    <p class="product-detail release">Releases March 2026</p>
+                </a>
+                
+ 
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="teto1.jpg">                    <p class="product-category">fuwa petit / fuwa plush</p>
+                    <h3 class="product-title">Kasane Teto Baguette Plush</h3>
+                    <p class="product-price">IDR 379,000</p>
+                    <p class="product-detail deposit">DP IDR 140,000</p>
+                    <p class="product-detail release">Releases March 2026</p>
+                </a>
+                
+                <a href="#" class="product-card product-card-style">
+<img class="product-card-image" src="Tetapp.jpg">                    <p class="product-category">SynthV / Voice Synthesizer</p>
+                    <h3 class="product-title">Synthesizer V Al Ver: Kasane Teto SynthV</h3>
+                    <p class="product-price">IDR 520,000</p>
+                    <p class="product-detail deposit">DP IDR 150,000</p>
+                    <p class="product-detail release">Releases Oct 2026</p>
+                </a>
+                
+                <a href="#" class="product-card product-card-style">
+                    <img class="product-card-image" src="Tetlay.jpg">
+                    <p class="product-category">NESOBERI (Lay-Down)</p>
+                    <h3 class="product-title">Plush Kasane Teto SynthV ver</h3>
+                    <p class="product-price">IDR 300,000</p>
+                    <p class="product-detail deposit">DP IDR 100,000</p>
+                    <p class="product-detail release">Releases Feb 2026</p>
+                </a>
+                
+                <a href="#" class="product-card product-card-style">
+                    <img class="product-card-image" src="Tetlayutao.jpg">
+                    <p class="product-category">NESOBERI (Lay-Down)</p>
+                    <h3 class="product-title">Plush Kasane Teto UTAU ver</h3>
+                    <p class="product-price">IDR 300,000</p>
+                    <p class="product-detail deposit">DP IDR 100,000</p>
+                    <p class="product-detail release">Releases Feb 2026</p>
+                </a>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

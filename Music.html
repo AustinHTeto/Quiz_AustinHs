@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teto Trail - Music Player</title>
+    <link rel="stylesheet" href="style2s.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="tETRA2.png" alt="Teto Trails Logo">
+            </a>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="Search for artists, tracks, or albums..." />
+            <button class="search-btn">🔍</button>
+        </div>
+
+  <div class="nav-icons">
+            <a href="Catalogue.html" title="Shopping Cart">🛒</a>
+            <a href="Music.html" title="Headphones / Support">🎧</a>
+            <span class="divider"></span>
+            <a href="Login.html" class="text-sm font-medium hover:underline">Sign in</a>
+        </div>
+    </nav>
+    <div class="main-content-wrapper">
+        <main class="music-content-area">
+            <h1 class="text-3xl font-bold mb-8 text-gray-800">Featured Album: Teto's Best of 2025</h1>
+
+            <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-8 p-6 rounded-xl bg-gray-50 shadow-inner">
+                <img src="SPOTEFEY.jpg" alt="Album Cover" class="rounded-lg shadow-xl w-32 h-32 sm:w-40 sm:h-40 object-cover">
+                <div class="text-center sm:text-left">
+                    <p class="text-sm text-gray-500 font-semibold uppercase">Album</p>
+                    <script src="https://cdn.tailwindcss.com"></script>
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-2">UTAU Power</h2>
+                    <p class="text-lg text-gray-700">Kasane Teto & Friends</p>
+                    <p class="text-sm text-gray-500 mt-2">7 Tracks • 58m</p>
+                    <button class="mt-4 px-6 py-2 bg-[#ff4500] text-white font-semibold rounded-full hover:bg-[#e03d00] transition duration-200 shadow-md">
+                        ▶️ Play Album
+                    </button>
+                </div>
+            </div>
+            <table class="track-list">
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">#</th>
+                        <th style="width: 45%;">Title</th>
+                        <th class="hidden md:table-cell" style="width: 25%;">Album</th>
+                        <th style="width: 15%;">Plays</th>
+                        <th style="width: 10%;">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-track-id="1" class="active-track">
+                        <td>1</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Mesmerizer_song.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold text-[#ff4500]">Mesmerizer</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Best of SynthV Kasane Teto</td>
+                        <td class="text-gray-600">120,345,012</td>
+                        <td>3:45</td>
+                    </tr>
+                    <tr data-track-id="2">
+                        <td>2</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Yoshiwara lament.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Yoshiwara Lament</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Yoshiwara</td>
+                        <td class="text-gray-600">12,213,901</td>
+                        <td>4:12</td>
+                    </tr>
+                    <tr data-track-id="3">
+                        <td>3</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Override.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Override</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Chimera Garden</td>
+                        <td class="text-gray-600">86,144,432</td>
+                        <td>2:58</td>
+                    </tr>
+                    <tr data-track-id="4">
+                        <td>4</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Tetoris.png" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Tetoris</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Tetris</td>
+                        <td class="text-gray-600">95,235,123</td>
+                        <td>5:01</td>
+                    </tr>
+                    </tr>
+                    <tr data-track-id="4">
+                        <td>5</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Machine love love.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Machine Love</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Magnum Opus</td>
+                        <td class="text-gray-600">25,451,234</td>
+                        <td>5:41</td>
+                    </tr>
+                    </tr>
+                    <tr data-track-id="4">
+                        <td>6</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Sciennrsdfkl.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Science</div>
+                                <div class="text-xs text-gray-500">Kasane Teto</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Tokyo University</td>
+                        <td class="text-gray-600">95,235,123</td>
+                        <td>3:11</td>
+                    </tr>
+                    </tr>
+                    <tr data-track-id="4">
+                        <td>7</td>
+                        <td class="track-info-cell">
+                            <img class="track-album-art" src="Triple bakas.jpg" alt="Track Art">
+                            <div>
+                                <div class="font-semibold">Triple Baka</div>
+                                <div class="text-xs text-gray-500">Kasane Teto, Hatsune Miku, Akita Neru</div>
+                            </div>
+                        </td>
+                        <td class="hidden md:table-cell text-gray-600">Triple Vocasynth</td>
+                        <td class="text-gray-600">68,125,425</td>
+                        <td>2:34</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>

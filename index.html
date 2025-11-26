@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teto Trail</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="tETRA2.png" alt="Teto Trails Logo" >
+            </a>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="What would you like to search for....." />
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="nav-icons">
+            <a href="Catalogue.html" title="Shopping Cart">🛒</a>
+            <a href="Music.html" title="Headphones / Support">🎧</a>
+            <span class="divider"></span>
+            <a href="Login.html" class="text-sm font-medium hover:underline">Sign in</a>
+        </div>
+    </nav>
+
+    <header class="hero-intro">
+        <h1>Welcome to Teto Trails!</h1>
+        <p>Your ultimate destination for official Anime Merchandise, Figures, Cosplay, and more.</p>
+        <p>Explore the newest drops and exclusive events featuring Kasane Teto and all your favorite characters!</p>
+    </header>
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <button class="arrow left-arrow" onclick="slideTop(-1)">❮</button>
+            <button class="arrow right-arrow" onclick="slideTop(1)">❯</button>
+
+            <div class="carousel-track" id="topTrack">
+               <a href=""> <img src="HSR POM.jpg"> </a>
+               <a href="#"> <img src="HSR.jpg"> </a>
+               <a href="#"> <img src="firefy.jpg"> </a>
+               <a href="#"> <img src="pgr.jpg"> </a>
+               <a href="#"> <img src="meeku.jpg"> </a>
+               <a href="#"> <img src="Wandrer.jpg"> </a>
+               <a href="#"> <img src="mikust.jpg"> </a>
+               <a href="#"> <img src="umauma.jpg"> </a>
+               <a href="#"> <img src="hsr2.jpg"> </a>
+            </div>
+        </div>
+    </div>
+    <div class="mid-carousel">
+        <button class="arrow left-arrow" onclick="slideMid(-1)">❮</button>
+        <button class="arrow right-arrow" onclick="slideMid(1)">❯</button>
+        <div class="mid-carousel-track" id="midTrack">
+            <div class="mid-carousel-item">
+                <img src="worldoteto.jpg">
+                <img src="teto23s.jpg">
+            </div>
+            <div class="mid-carousel-item">
+                <img src="teto1.jpg">
+                <img src="teto2.jpg">
+            </div>
+            <div class="mid-carousel-item">
+                <img src="teto3.png">
+                <img src="teto4.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="card-row">
+        <div class="card"><a href="#"> <img src="matsuri1.jpg"> </a></div>
+        <div class="card"><a href="#"> <img src="matsuri2.jpg"> </a></div>
+        <div class="card"><a href="#"> <img src="matsuri3.jpg"> </a></div>
+    </div>
+
+    <section class="cards-section">
+        <div class="cards-container">
+            <div class="card"><a href="#"> <img src="tetofig.jpg"> </a>
+                <h3>Anime Figure</h3>
+            </div>
+            <div class="card"><a href="#"> <img src="tetocos.jpg"> </a>
+                <h3>Cosplay Corner</h3>
+            </div>
+            <div class="card"><a href="#"> <img src="wipeot.png"> </a>
+                <h3>Wipeout Event</h3>
+            </div>
+            <div class="card"><a href="#"> <img src="tetoplu.jpg"> </a>
+                <h3>Kasane Teto Merch</h3>
+            </div>
+            <div class="card"><a href="#"> <img src="tetonen.jpg"> </a>
+                <h3>Nendoroid Sale</h3>
+            </div>
+            <div class="card"><a href="#"> <img src="tetomang.png"> </a>
+                <h3>Manga Picks</h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* TOP CAROUSEL LOGIC */
+        let topIndex = 0;
+        function slideTop(dir) {
+            const track = document.getElementById("topTrack");
+            const itemWidth = 495; // 480 (image width) + 15 (gap)
+            topIndex += dir;
+
+            const totalItems = track.children.length;
+            // Assuming you want to show ~2 items at a time on a standard desktop
+            // Max index should be (totalItems - itemsVisible) -> 6 - 3 = 3
+            // Let's set a safe limit based on the number of slides you have
+            if (topIndex < 0) topIndex = 0;
+            if (topIndex > totalItems - 1) topIndex = totalItems - 1;
+
+            track.style.transform = `translateX(${-topIndex * itemWidth}px)`;
+        }
+
+        /* MIDDLE CAROUSEL LOGIC */
+        let midIndex = 0;
+        function slideMid(dir) {
+            const track = document.getElementById("midTrack");
+            const total = 3; // 3 slides
+            midIndex += dir;
+
+            if (midIndex < 0) midIndex = total - 1;
+            if (midIndex >= total) midIndex = 0;
+
+            track.style.transform = `translateX(${-midIndex * 100}%)`;
+        }
+    </script>
+</body>
+
+</html>
